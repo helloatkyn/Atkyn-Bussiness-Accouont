@@ -30,7 +30,6 @@ export default function App() {
 
   return (
     <>
-      <div className="mesh" aria-hidden="true"><i /><i /><i /></div>
       <Navbar onStart={start} />
       {started ? <Onboarding onSave={save} onExit={exit} /> : <Landing onStart={start} />}
     </>
